@@ -1,6 +1,6 @@
 # Projekt_zaliczeniowy_phptravels_
 
-Zapraszam do zapoznania się z moim projektem wykonanym w ramach zaliczenia kursu Tester Oprogramowania "Testy aplikacji bookingowej https://phptravels.net". Aplikacja służy dokonywaniu rezerwacji w podziale na kategorie: hotele, wycieczki, loty, samochody z poziomu zalogowanego użytkownika lub bez zalogowania. Testy aplikacji przeprowadzono w dniach 8 - 17 lipca 2023 r. 
+Zapraszam do zapoznania się z moim projektem wykonanym w ramach zaliczenia kursu Tester Oprogramowania "Testy aplikacji bookingowej https://phptravels.net". Aplikacja służy dokonywaniu rezerwacji w podziale na kategorie: hotele, wycieczki, loty, samochody z poziomu zalogowanego użytkownika lub bez zalogowania. Testy aplikacji przeprowadzono w dniach 8 - 17 lipca 2023 r. Przypadki testowe oraz test run wykonany jest w TestRail, zgłoszenia błędów w Jira, wykonana została również sesja eksploracyjna i analiza ryzyka.
 Dodatkowo załączone są nagrania do testów aplikacji https://zoohurtowo.pl. 
 
 Załączona dokumentacja:
