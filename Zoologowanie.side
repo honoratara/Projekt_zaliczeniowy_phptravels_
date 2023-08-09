@@ -1,0 +1,130 @@
+{
+  "id": "b2594fd0-6305-47a6-be5e-97b22de62cfe",
+  "version": "2.0",
+  "name": "Zoologowanie",
+  "url": "https://www.zoohurtowo.pl",
+  "tests": [{
+    "id": "3e071c83-75aa-4d55-a416-88adc79db3a7",
+    "name": "Zoologowanie",
+    "commands": [{
+      "id": "f309d5c4-03f6-439a-b561-6a60e07b51f7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09e8299e-dcfb-4cc2-9c41-ef00c88bc54a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15d84dc9-cdd5-40f1-9996-f380eb7a50e7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logowanie",
+      "targets": [
+        ["linkText=Logowanie", "linkText"],
+        ["css=.link > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Logowanie')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.zoohurtowo.pl/?body=account')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ba06a2f-6c9c-440b-9e70-bce10632a2a5",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_emial",
+      "targets": [
+        ["id=f_emial", "id"],
+        ["name=email", "name"],
+        ["css=#f_emial", "css:finder"],
+        ["xpath=//input[@id='f_emial']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cde3f08b-be92-4867-a898-a604a7e1795b",
+      "comment": "",
+      "command": "type",
+      "target": "id=f_emial",
+      "targets": [
+        ["id=f_emial", "id"],
+        ["name=email", "name"],
+        ["css=#f_emial", "css:finder"],
+        ["xpath=//input[@id='f_emial']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "anna.nowak@gmail.com"
+    }, {
+      "id": "1bbd0a23-e65b-49f1-9862-fbdb9c343ec7",
+      "comment": "",
+      "command": "type",
+      "target": "id=f_haslo_uzytkownika",
+      "targets": [
+        ["id=f_haslo_uzytkownika", "id"],
+        ["name=haslo_uzytkownika", "name"],
+        ["css=#f_haslo_uzytkownika", "css:finder"],
+        ["xpath=//input[@id='f_haslo_uzytkownika']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "123qwe"
+    }, {
+      "id": "380292a4-b3d5-496f-bcdc-aa0bcc6e358b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5addbf66-6bba-406f-a893-adeefd578ca2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Twoje konto",
+      "targets": [
+        ["linkText=Twoje konto", "linkText"],
+        ["css=.link > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Twoje konto')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.zoohurtowo.pl/?body=profile')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00f6b4cc-0d2b-40b1-83c2-61627d6ecad1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Zamówienia",
+      "targets": [
+        ["linkText=Zamówienia", "linkText"],
+        ["css=.nav-tabs > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Zamówienia')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/index.php?body=orders')]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Zamówienia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0b301891-5127-493b-8d8d-c18913f6aeee",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3e071c83-75aa-4d55-a416-88adc79db3a7"]
+  }],
+  "urls": ["https://www.zoohurtowo.pl/"],
+  "plugins": []
+}

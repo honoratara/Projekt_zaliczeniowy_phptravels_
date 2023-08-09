@@ -1,0 +1,236 @@
+{
+  "id": "8b6e4dfb-a46f-4412-8cc4-053d3aa44133",
+  "version": "2.0",
+  "name": "Zakupkarmy",
+  "url": "https://www.zoohurtowo.pl",
+  "tests": [{
+    "id": "7ebf1473-1c1d-4ccc-b3e0-4ebda295f22f",
+    "name": "Zoozakupkarmy",
+    "commands": [{
+      "id": "99d94c4b-28cf-4a61-abff-04d0f8faeb06",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f35acb1a-69df-49b5-b700-9f8e420d01af",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "096e97e5-50ba-40a5-9234-c6c3fe6fe096",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Karmy dla psów",
+      "targets": [
+        ["linkText=Karmy dla psów", "linkText"],
+        ["css=.box0 > p > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Karmy dla psów')]", "xpath:link"],
+        ["xpath=//div[@id='home']/div[2]/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.zoohurtowo.pl/dla-psow/karmy')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Karmy dla psów')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3819aca7-3a83-407e-a740-a44c633ee032",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Suche",
+      "targets": [
+        ["linkText=Suche", "linkText"],
+        ["css=#a54943471 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Suche')]", "xpath:link"],
+        ["xpath=//li[@id='a54943471']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.zoohurtowo.pl/dla-psow/karmy/suche')]", "xpath:href"],
+        ["xpath=//div[3]/div/div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Suche')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b33f4302-ad64-40ac-bfaa-ed8702603f44",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Acana Adult karma dla psów dorosłych 17kg",
+      "targets": [
+        ["linkText=Acana Adult karma dla psów dorosłych 17kg", "linkText"],
+        ["css=.col-md-3:nth-child(2) h3 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Acana Adult karma dla psów dorosłych 17kg')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div[3]/div[2]/div/div[2]/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.zoohurtowo.pl/dla-psow/karmy/suche/acana/acana-adult-karma-dla-psow-doroslych--17kg,p2014913500')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Acana Adult karma dla psów dorosłych 17kg')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5d674c2-412f-40ee-b745-ae1be46e0e8c",
+      "comment": "",
+      "command": "click",
+      "target": "id=ile",
+      "targets": [
+        ["id=ile", "id"],
+        ["name=ile", "name"],
+        ["css=#ile", "css:finder"],
+        ["xpath=//input[@id='ile']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98af36eb-d39f-4d47-adfe-d59e861a142e",
+      "comment": "",
+      "command": "type",
+      "target": "id=ile",
+      "targets": [
+        ["id=ile", "id"],
+        ["name=ile", "name"],
+        ["css=#ile", "css:finder"],
+        ["xpath=//input[@id='ile']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "6a9ee1a2-cda3-4539-a5a9-6938060e03e6",
+      "comment": "",
+      "command": "click",
+      "target": "id=product_cart",
+      "targets": [
+        ["id=product_cart", "id"],
+        ["css=#product_cart", "css:finder"],
+        ["xpath=//button[@id='product_cart']", "xpath:attributes"],
+        ["xpath=//div[@id='product-price']/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dodaj do koszyka')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fd76b21-a6d6-478d-8205-d22162bb54a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(8)",
+      "targets": [
+        ["css=.btn:nth-child(8)", "css:finder"],
+        ["xpath=//button[@onclick=\"location.href='/?kasa=1';\"]", "xpath:attributes"],
+        ["xpath=//div[@id='cart-information']/div[2]/div[2]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31fccd4c-4b59-4408-846e-338bcd53ffa6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.auto-all-total",
+      "targets": [
+        ["css=.auto-all-total", "css:finder"],
+        ["xpath=//div[@id='content']/div/form/div[2]/div[2]/div/div/b/span", "xpath:idRelative"],
+        ["xpath=//div/b/span", "xpath:position"]
+      ],
+      "value": "745.62"
+    }, {
+      "id": "78a3af0f-60d0-4c63-bf63-2c7a396f2608",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-cart-next",
+      "targets": [
+        ["css=.btn-cart-next", "css:finder"],
+        ["xpath=//a[contains(text(),'Następny krok')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"go_form(document.cart, 'https://www.zoohurtowo.pl/?kasa=2&refresh=1')\"]", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div[3]/a[3]", "xpath:idRelative"],
+        ["xpath=//a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef2a86d0-5772-4d11-9ec7-80086ff75ce1",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_email_2",
+      "targets": [
+        ["id=f_email_2", "id"],
+        ["name=email_2", "name"],
+        ["css=#f_email_2", "css:finder"],
+        ["xpath=//input[@id='f_email_2']", "xpath:attributes"],
+        ["xpath=//div[@id='logowanie']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e58bef82-8642-40a8-af16-3ebdf87d3094",
+      "comment": "",
+      "command": "type",
+      "target": "id=f_email_2",
+      "targets": [
+        ["id=f_email_2", "id"],
+        ["name=email_2", "name"],
+        ["css=#f_email_2", "css:finder"],
+        ["xpath=//input[@id='f_email_2']", "xpath:attributes"],
+        ["xpath=//div[@id='logowanie']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "anna.nowak@gmail.com"
+    }, {
+      "id": "4ce8315e-7e41-4dd8-b0c5-5bf6b9d8461c",
+      "comment": "",
+      "command": "type",
+      "target": "id=f_haslo_uzytkownika",
+      "targets": [
+        ["id=f_haslo_uzytkownika", "id"],
+        ["name=haslo_uzytkownika", "name"],
+        ["css=#logowanie #f_haslo_uzytkownika", "css:finder"],
+        ["xpath=//input[@id='f_haslo_uzytkownika']", "xpath:attributes"],
+        ["xpath=//div[@id='logowanie']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[3]/div/input", "xpath:position"]
+      ],
+      "value": "123qwe"
+    }, {
+      "id": "a1e59b1e-1679-4cd6-be45-4c2bfdf637a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg",
+      "targets": [
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div[7]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6672d4a8-f0b7-4516-87fb-6f97ed084d0d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg",
+      "targets": [
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08d89c91-a652-4ffe-8420-985791fe2a28",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.important:nth-child(2)",
+      "targets": [
+        ["css=.important:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[4]/div[2]/div[2]/p[6]/b[2]", "xpath:idRelative"],
+        ["xpath=//b[2]", "xpath:position"],
+        ["xpath=//b[contains(.,'760.12 PLN')]", "xpath:innerText"]
+      ],
+      "value": "760.12 PLN"
+    }]
+  }],
+  "suites": [{
+    "id": "a9b42370-93b4-430d-a1c8-d8756296c0c9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7ebf1473-1c1d-4ccc-b3e0-4ebda295f22f"]
+  }],
+  "urls": ["https://www.zoohurtowo.pl/"],
+  "plugins": []
+}

@@ -1,0 +1,1883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R1</id>
+	<name>Test Run 7/16/2023</name>
+	<description>Test run dotyczący funckcjonalności aplikacji phptravels.net wersja 1.0</description>
+	<config></config>
+	<createdon>2023-07-16T09:48:52Z</createdon>
+		<completed>false</completed>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>33</percent>
+			<count>6</count>
+		</passed>
+											<blocked>
+			<percent>17</percent>
+			<count>3</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>50</percent>
+			<count>9</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>Testy PHPT1</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Konto Użytkownika</name>
+		<description>przypadki testowe dotyczące zakładania i logowania do konta użytkownika</description>
+						<tests>
+						            																																																			<test>
+				<id>T1</id>
+				<title>Zakładanie profilu w aplikacji bookingowej phptravels.net</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>600</estimate>
+																								<references>PHPTTRAV-2</references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)</preconds>
+															<steps_separated><step>
+<index>1</index><content>Kliknij button &quot;ACCOUNT&quot; w prawym g&amp;oacute;rnym rogu strony</content><expected>Pojawia się lista rozwijalna z opcjami do wyboru: &quot;Login&quot;, &quot;Signup&quot;</expected></step>
+<step>
+<index>2</index><content>Wybierz z listy rozwijalnej opcję &quot;Signup&quot;</content><expected>Pojawia się formularz z polami do wypełnienia</expected></step>
+<step>
+<index>3</index><content>W formularzu wypełnij pola:
+- &quot;First Name&quot;: Anna
+- &quot;Last Name&quot;: Nowak</content><expected>W odpowiednich polach pojawiają się wpisane dane</expected></step>
+<step>
+<index>4</index><content>Kliknij button &quot;Select Country&quot;</content><expected>Pojawia się lista rozwijalna dająca możliwość wyboru kraju</expected></step>
+<step>
+<index>5</index><content>Wybierz z listy rozwijalnej &quot;Poland&quot;</content><expected>W polu &quot;Select Country&quot; pojawia się &quot;Poland +48&quot;</expected></step>
+<step>
+<index>6</index><content>Wypełnij pola:
+- &quot;Phone&quot;: 987654321
+- &quot;Email Address&quot;: testowanie135@gmail.com
+- &quot;Password&quot;: qwe123</content><expected>W odpowiednich polach pojawiają się wpisane dane, z wyjątkiem pola &quot;Password&quot;, gdzie pojawiają się kropki w ilości zgodniej z ilością liter w haśle</expected></step>
+<step>
+<index>7</index><content>Zaznacz checkbox w polu &quot;Nie jestem robotem&quot; i wykonaj otrzymane polecenie weryfikacyjne jeżeli się ono pojawi</content><expected>Po wykonaniu polecenia weryfikacyjnego pojawia się komunikat zatwierdzający</expected></step>
+<step>
+<index>8</index><content>Kliknij button &quot;Signup&quot;
+</content><expected>Pojawia się komunikat o poprawnym założeniu konta i konieczności potwierdzenia założenia konta pod podanym adresem e-mail.</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C1</caseid>
+																<status>Passed</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>600</elapsed>
+																																														<defects>PHPTTRAV-2</defects>
+																<changes>
+															<change>
+						<createdon>2023-07-16T10:15:45Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Passed</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>Wszystkie kroki zostały wykonane.
+Po wpisaniu i zatwierdzeniu danych jedynie jeden raz dotarł mail z informacją o założeniu konta i linkiem do zatwierdzenia. Było to 9.07.2023.
+Później konto użytkownika wygasło i przy kolejnej próbie założenia konta w dniu 14.07.2023 i w kolejnych dniach mail z potwierdzeniem założenia konta nie dotarł na podany adres, co uniemożliwiło testy z wykorzystaniem zalogowanego konta klienta</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>600</elapsed>
+																														<defects>PHPTTRAV-2</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij button </content><expected>Pojawia się lista rozwijalna z opcjami do wyboru: </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz z listy rozwijalnej opcję </content><expected>Pojawia się formularz z polami do wypełnienia</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>W formularzu wypełnij pola:
+- </content><expected>W odpowiednich polach pojawiają się wpisane dane</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij button </content><expected>Pojawia się lista rozwijalna dająca możliwość wyboru kraju</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz z listy rozwijalnej </content><expected>W polu </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wypełnij pola:
+- </content><expected>W odpowiednich polach pojawiają się wpisane dane, z wyjątkiem pola </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Zaznacz checkbox w polu </content><expected>Po wykonaniu polecenia weryfikacyjnego pojawia się komunikat zatwierdzający</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij button </content><expected>Pojawia się komunikat o poprawnym założeniu konta i konieczności potwierdzenia założenia konta pod podanym adresem e-mail.</expected><actual></actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-16T09:48:52Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T2</id>
+				<title>Zakładanie profilu w aplikacji bookingowej phptravels.net - z podaniem nieprawidłowo sformatowanych danych</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>600</estimate>
+																								<references>PHPTTRAV-4</references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)</preconds>
+															<steps_separated><step>
+<index>1</index><content>Kliknij button &quot;ACCOUNT&quot; w prawym g&amp;oacute;rnym rogu strony</content><expected>Pojawia się lista rozwijalna z opcjami do wyboru: &quot;Login&quot;, &quot;Signup&quot;</expected></step>
+<step>
+<index>2</index><content>Wybierz z listy rozwijalnej opcję &quot;Signup&quot;</content><expected>Pojawia się formularz z polami do wypełnienia</expected></step>
+<step>
+<index>3</index><content>W formularzu wypełnij pola:
+
+&quot;First Name&quot;: Anna
+&quot;Last Name&quot;: Nowak
+</content><expected>W odpowiednich polach pojawiają się wpisane dane</expected></step>
+<step>
+<index>4</index><content>Kliknij button &quot;Select Country&quot;</content><expected>Pojawia się lista rozwijalna dająca możliwość wyboru kraju
+</expected></step>
+<step>
+<index>5</index><content>Wybierz z listy rozwijalnej &quot;Poland&quot;</content><expected>W polu &quot;Select Country&quot; pojawia się &quot;Poland +48&quot;</expected></step>
+<step>
+<index>6</index><content>Wypełnij pola:
+&quot;Phone&quot;: 987654321651632616161
+&quot;Email Address&quot;: testowanie135@gmail.com
+&quot;Password&quot;: qwe123
+</content><expected>W odpowiednich polach pojawiają się wpisane dane, w polu &quot;Password&quot; zamiast liter pojawiają się kropki w ilości odpowiadającej ilości znak&amp;oacute;w w haśle</expected></step>
+<step>
+<index>7</index><content>Zaznacz checkbox w polu &quot;Nie jestem robotem&quot; i wykonaj otrzymane polecenie weryfikacyjne jeżeli się ono pojawi</content><expected>Po wykonaniu polecenia weryfikacyjnego pojawia się komunikat zatwierdzający</expected></step>
+<step>
+<index>8</index><content>Kliknij button &quot;Signup&quot;</content><expected>Przy polu &quot;Phone&quot; pojawia się komunikat: &quot;Wrong phone number. Password should include maximum 9 figures.&quot;</expected></step>
+<step>
+<index>9</index><content>Zmień numer telefonu i podaj ciąg 9 cyfr, a następnie kliknij button &quot;Signup&quot;</content><expected>Pojawia się komunikat o poprawnym założeniu konta i konieczności potwierdzenia założenia konta pod podanym adresem e-mail.</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2</caseid>
+																<status>Failed</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>600</elapsed>
+																																														<defects>PHPTTRAV-4</defects>
+																<changes>
+															<change>
+						<createdon>2023-07-16T10:36:23Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Failed</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>Aplikacja dopuszcza wpisanie numeru telefonu w sposób niezgodny z wymaganiami. Nie zwraca komunikatu o wprowadzeniu niepoprawnego numeru telefonu przy zakładaniu konta.</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>600</elapsed>
+																														<defects>PHPTTRAV-4</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij button </content><expected>Pojawia się lista rozwijalna z opcjami do wyboru: </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz z listy rozwijalnej opcję </content><expected>Pojawia się formularz z polami do wypełnienia</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>W formularzu wypełnij pola:
+
+</content><expected>W odpowiednich polach pojawiają się wpisane dane</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij button </content><expected>Pojawia się lista rozwijalna dająca możliwość wyboru kraju
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz z listy rozwijalnej </content><expected>W polu </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wypełnij pola:
+</content><expected>W odpowiednich polach pojawiają się wpisane dane, w polu </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Zaznacz checkbox w polu </content><expected>Po wykonaniu polecenia weryfikacyjnego pojawia się komunikat zatwierdzający</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij button </content><expected>Przy polu </expected><actual>Pojawia się komunikat o poprawnym założeniu konta. Nie ma informacji o błędnie wprowadzonym numerze telefonu.</actual><status>Failed</status></step>
+<step>
+<content>Zmień numer telefonu i podaj ciąg 9 cyfr, a następnie kliknij button </content><expected>Pojawia się komunikat o poprawnym założeniu konta i konieczności potwierdzenia założenia konta pod podanym adresem e-mail.</expected><actual>Ze względu na niepoprawne zadziałanie aplikacji w poprzednim kroku nie ma możliwości wykonania tego kroku</actual><status>Blocked</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-16T09:48:52Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T3</id>
+				<title>Zakładanie profilu w aplikacji bookingowej phptravels.net - z podaniem nieprawidłowo sformatowanych danych 2</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>600</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)</preconds>
+															<steps_separated><step>
+<index>1</index><content>Kliknij button &quot;ACCOUNT&quot; w prawym g&amp;oacute;rnym rogu strony</content><expected>Pojawia się lista rozwijalna z opcjami do wyboru: &quot;Login&quot;, &quot;Signup&quot;</expected></step>
+<step>
+<index>2</index><content>Wybierz z listy rozwijalnej opcję &quot;Signup&quot;</content><expected>Pojawia się formularz z polami do wypełnienia</expected></step>
+<step>
+<index>3</index><content>W formularzu wypełnij pola:
+
+&quot;First Name&quot;: Anna
+&quot;Last Name&quot;: Nowak</content><expected>W odpowiednich polach pojawiają się wpisane dane</expected></step>
+<step>
+<index>4</index><content>Kliknij button &quot;Select Country&quot;</content><expected>Pojawia się lista rozwijalna dająca możliwość wyboru kraju</expected></step>
+<step>
+<index>5</index><content>Wybierz z listy rozwijalnej &quot;Poland&quot;</content><expected>W polu &quot;Select Country&quot; pojawia się &quot;Poland +48&quot;</expected></step>
+<step>
+<index>6</index><content>Wypełnij pola:
+&quot;Phone&quot;: 987654321
+&quot;Email Address&quot;: annanowak
+&quot;Password&quot;: qwe123</content><expected>W odpowiednich polach pojawiają się wpisane dane, z wyjątkiem pola &quot;Password&quot;, gdzie pojawiają się kropki w ilości zgodniej z ilością liter w haśle</expected></step>
+<step>
+<index>7</index><content>Zaznacz checkbox w polu &quot;Nie jestem robotem&quot; i wykonaj otrzymane polecenie weryfikacyjne jeżeli się ono pojawi</content><expected>Po wykonaniu polecenia weryfikacyjnego pojawia się komunikat zatwierdzający</expected></step>
+<step>
+<index>8</index><content>Kliknij button &quot;Signup&quot;</content><expected>Przy polu &quot;Email Address&quot; pojawia się komunikat: &quot;W adresie e-mail brakuje znaku &quot;@&quot;.&quot;</expected></step>
+<step>
+<index>9</index><content>Zmień adres e-mail i podaj adres testowanie135@gmail.com, a następnie kliknij button &quot;Signup&quot;</content><expected>Pojawia się komunikat o poprawnym założeniu konta i konieczności potwierdzenia założenia konta pod podanym adresem e-mail.</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3</caseid>
+																<status>Passed</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>600</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-07-16T11:10:31Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Passed</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>Aplikacja nie zatwierdza nieprawidłowych danych w postaci niezgodnego z wymaganiami adresu e-mail. Pojawia się komunikat o wprowadzeniu błędnego adresu e-mail.</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>600</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij button </content><expected>Pojawia się lista rozwijalna z opcjami do wyboru: </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz z listy rozwijalnej opcję </content><expected>Pojawia się formularz z polami do wypełnienia</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>W formularzu wypełnij pola:
+
+</content><expected>W odpowiednich polach pojawiają się wpisane dane</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij button </content><expected>Pojawia się lista rozwijalna dająca możliwość wyboru kraju</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz z listy rozwijalnej </content><expected>W polu </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wypełnij pola:
+</content><expected>W odpowiednich polach pojawiają się wpisane dane, z wyjątkiem pola </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Zaznacz checkbox w polu </content><expected>Po wykonaniu polecenia weryfikacyjnego pojawia się komunikat zatwierdzający</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij button </content><expected>Przy polu </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Zmień adres e-mail i podaj adres testowanie135@gmail.com, a następnie kliknij button </content><expected>Pojawia się komunikat o poprawnym założeniu konta i konieczności potwierdzenia założenia konta pod podanym adresem e-mail.</expected><actual></actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-16T09:48:52Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T4</id>
+				<title>Zakładanie profilu w aplikacji bookingowej phptravels.net - z częściowym brakiem danych</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>600</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)</preconds>
+															<steps_separated><step>
+<index>1</index><content>Kliknij button &quot;ACCOUNT&quot; w prawym g&amp;oacute;rnym rogu strony</content><expected>Pojawia się lista rozwijalna z opcjami do wyboru: &quot;Login&quot;, &quot;Signup&quot;</expected></step>
+<step>
+<index>2</index><content>W/ybierz z listy rozwijalnej opcję &quot;Signup&quot;</content><expected>Pojawia się formularz z polami do wypełnienia</expected></step>
+<step>
+<index>3</index><content>W formularzu wypełnij pola:
+
+&quot;First Name&quot;: Anna
+&quot;Last Name&quot;: Nowak</content><expected>W odpowiednich polach pojawiają się wpisane dane</expected></step>
+<step>
+<index>4</index><content>Kliknij button &quot;Select Country&quot;</content><expected>Pojawia się lista rozwijalna dająca możliwość wyboru kraju</expected></step>
+<step>
+<index>5</index><content>Wybierz z listy rozwijalnej &quot;Poland&quot;
+</content><expected>W polu &quot;Select Country&quot; pojawia się &quot;Poland +48&quot;</expected></step>
+<step>
+<index>6</index><content>Wypełnij pola:
+&quot;Phone&quot;: 987654321
+&quot;Email Address&quot;: testowanie135@gmail.com
+
+</content><expected>W odpowiednich polach pojawiają się wpisane dane, pole &quot;Password&quot; pozostaje puste</expected></step>
+<step>
+<index>7</index><content>Zaznacz checkbox w polu &quot;Nie jestem robotem&quot; i wykonaj otrzymane polecenie weryfikacyjne jeżeli się ono pojawi</content><expected>Po wykonaniu polecenia weryfikacyjnego pojawia się komunikat zatwierdzający</expected></step>
+<step>
+<index>8</index><content>Kliknij button &quot;Signup&quot;</content><expected>Przy polu &quot;Password&quot; pojawia się komunikat: &quot;Wypełnij to pole.&quot;</expected></step>
+<step>
+<index>9</index><content>Wpisz hasło &quot;qwe123&quot;, a następnie kliknij button &quot;Signup&quot;</content><expected>Pojawia się komunikat o poprawnym założeniu konta i konieczności potwierdzenia założenia konta pod podanym adresem e-mail.</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4</caseid>
+																<status>Passed</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>600</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-07-16T11:34:37Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Passed</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>Aplikacja nie pozwala na pozostawienie pola &quot;Password&quot; pustego, w związku z tym test został zaliczony</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>600</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij button </content><expected>Pojawia się lista rozwijalna z opcjami do wyboru: </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>W/ybierz z listy rozwijalnej opcję </content><expected>Pojawia się formularz z polami do wypełnienia</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>W formularzu wypełnij pola:
+
+</content><expected>W odpowiednich polach pojawiają się wpisane dane</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij button </content><expected>Pojawia się lista rozwijalna dająca możliwość wyboru kraju</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz z listy rozwijalnej </content><expected>W polu </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wypełnij pola:
+</content><expected>W odpowiednich polach pojawiają się wpisane dane, pole </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Zaznacz checkbox w polu </content><expected>Po wykonaniu polecenia weryfikacyjnego pojawia się komunikat zatwierdzający</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij button </content><expected>Przy polu </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wpisz hasło </content><expected>Pojawia się komunikat o poprawnym założeniu konta i konieczności potwierdzenia założenia konta pod podanym adresem e-mail.</expected><actual></actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-16T09:48:52Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T5</id>
+				<title>Zakładanie profilu w aplikacji bookingowej phptravels.net - z częściowym brakiem danych 2</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>600</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)</preconds>
+															<steps_separated><step>
+<index>1</index><content>Kliknij button &quot;ACCOUNT&quot; w prawym g&amp;oacute;rnym rogu strony</content><expected>Pojawia się lista rozwijalna z opcjami do wyboru: &quot;Login&quot;, &quot;Signup&quot;</expected></step>
+<step>
+<index>2</index><content>Wybierz z listy rozwijalnej opcję &quot;Signup&quot;</content><expected>Pojawia się formularz z polami do wypełnienia</expected></step>
+<step>
+<index>3</index><content>W formularzu wypełnij pola:
+
+&quot;First Name&quot;: Anna
+&quot;Last Name&quot;: Nowak</content><expected>W odpowiednich polach pojawiają się wpisane dane</expected></step>
+<step>
+<index>4</index><content>Wypełnij pola:
+&quot;Phone&quot;: 987654321
+&quot;Email Address&quot;: testowanie135@gmail.com
+&quot;Password&quot;: qwe123</content><expected>W odpowiednich polach pojawiają się wpisane dane, z wyjątkiem pola &quot;Password&quot;, gdzie pojawiają się kropki w ilości zgodniej z ilością liter w haśle</expected></step>
+<step>
+<index>5</index><content>Zaznacz checkbox w polu &quot;Nie jestem robotem&quot; i wykonaj otrzymane polecenie weryfikacyjne jeżeli się ono pojawi</content><expected>Po wykonaniu polecenia weryfikacyjnego pojawia się komunikat zatwierdzający</expected></step>
+<step>
+<index>6</index><content>Kliknij button &quot;Signup&quot;
+</content><expected>Przy polu &quot;Select Country&quot; pojawia się komunikat: &quot;Wybierz element z listy.&quot;</expected></step>
+<step>
+<index>7</index><content>Kliknij button &quot;Select Country&quot;</content><expected>Pojawia się lista rozwijalna dająca możliwość wyboru kraju
+</expected></step>
+<step>
+<index>8</index><content>Wybierz z listy rozwijalnej &quot;Poland&quot;</content><expected>W polu &quot;Select Country&quot; pojawia się &quot;Poland +48&quot;</expected></step>
+<step>
+<index>9</index><content>Kliknij button &quot;Signup&quot;</content><expected>Pojawia się komunikat o poprawnym założeniu konta i konieczności potwierdzenia założenia konta pod podanym adresem e-mail.</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C5</caseid>
+																<status>Passed</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>600</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-07-16T11:45:56Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Passed</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>Aplikacja nie pozwala na pozostawienie pola &quot;Select Country&quot; pustego, w związku z tym test został zaliczony</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>600</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij button </content><expected>Pojawia się lista rozwijalna z opcjami do wyboru: </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz z listy rozwijalnej opcję </content><expected>Pojawia się formularz z polami do wypełnienia</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>W formularzu wypełnij pola:
+
+</content><expected>W odpowiednich polach pojawiają się wpisane dane</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wypełnij pola:
+</content><expected>W odpowiednich polach pojawiają się wpisane dane, z wyjątkiem pola </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Zaznacz checkbox w polu </content><expected>Po wykonaniu polecenia weryfikacyjnego pojawia się komunikat zatwierdzający</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij button </content><expected>Przy polu </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij button </content><expected>Pojawia się lista rozwijalna dająca możliwość wyboru kraju
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz z listy rozwijalnej </content><expected>W polu </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij button </content><expected>Pojawia się komunikat o poprawnym założeniu konta i konieczności potwierdzenia założenia konta pod podanym adresem e-mail.</expected><actual></actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-16T09:48:52Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T6</id>
+				<title>Logowanie do konta w aplikacji bookingowej phptravels.net</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>180</estimate>
+																								<references>PHPTTRAV-6</references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)</preconds>
+															<steps_separated><step>
+<index>1</index><content>Kliknij button &quot;ACCOUNT&quot; w prawym g&amp;oacute;rnym rogu strony
+</content><expected>Pojawia się lista rozwijalna z opcjami do wyboru: &quot;Login&quot;, &quot;Signup&quot;</expected></step>
+<step>
+<index>2</index><content>Wybierz z listy rozwijalnej opcję &quot;Login&quot;
+</content><expected>Pojawia się formularz &quot;Login&quot; z polami do wypełnienia
+</expected></step>
+<step>
+<index>3</index><content>W formularzu wypełnij pole &quot;Email Address&quot;: testowanie135@gmail.com</content><expected>W polu &quot;Email Address&quot; pojawia się wpisany adres email</expected></step>
+<step>
+<index>4</index><content>Wypełnij pole &quot;Password&quot;: qwe123</content><expected>W polu Password pojawiają się kropki w ilości zgodniej z ilością liter w haśle</expected></step>
+<step>
+<index>5</index><content>Kliknij button &quot;Login&quot;</content><expected>Pojawia się konto Użytkownika z nazwiskiem zgodnym z przypisanym do danego adresu e-mail</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C6</caseid>
+																<status>Failed</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>180</elapsed>
+																																														<defects>PHPTTRAV-6</defects>
+																<changes>
+															<change>
+						<createdon>2023-07-16T12:09:19Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Failed</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>Ze względu na brak możliwości zatwierdzenia utworzenia konta, w związku z brakiem otrzymania maila z linkiem do zatwierdzenia konta (w teście T1) nie ma możliwości zalogowania do konta klienta. 
+Wypełnienie i zatwierdzenie formularza logowania skutkuje wyświetleniem ponownie pustego formularza logowania. </comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>180</elapsed>
+																														<defects>PHPTTRAV-6</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij button </content><expected>Pojawia się lista rozwijalna z opcjami do wyboru: </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz z listy rozwijalnej opcję </content><expected>Pojawia się formularz </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>W formularzu wypełnij pole </content><expected>W polu </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wypełnij pole </content><expected>W polu Password pojawiają się kropki w ilości zgodniej z ilością liter w haśle</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij button </content><expected>Pojawia się konto Użytkownika z nazwiskiem zgodnym z przypisanym do danego adresu e-mail</expected><actual>Pojawia się pusty formularz do logowania. Nie ma możliwości zalogowania do konta użytkownika ze względu na brak możliwości zatwierdzenia założenia konta (brak otrzymania e-maila z linkiem do zatwierdzenia konta).</actual><status>Failed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-16T09:48:52Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T7</id>
+				<title>Logowanie do konta w aplikacji bookingowej phptravels.net - z podaniem nieprawidłowo sformatowanych danych</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>180</estimate>
+																								<references>PHPTTRAV-6</references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)
+</preconds>
+															<steps_separated><step>
+<index>1</index><content>Kliknij button &quot;ACCOUNT&quot; w prawym g&amp;oacute;rnym rogu strony</content><expected>Pojawia się lista rozwijalna z opcjami do wyboru: &quot;Login&quot;, &quot;Signup&quot;</expected></step>
+<step>
+<index>2</index><content>Wybierz z listy rozwijalnej opcję &quot;Login&quot;</content><expected>Pojawia się formularz &quot;Login&quot; z polami do wypełnienia</expected></step>
+<step>
+<index>3</index><content>W formularzu wypełnij pole &quot;Email Address&quot;: annanowak</content><expected>W polu &quot;Email Address&quot; pojawia się wpisany ciąg znak&amp;oacute;w</expected></step>
+<step>
+<index>4</index><content>Wypełnij pole &quot;Password&quot;: qwe123</content><expected>W polu Password pojawiają się kropki w ilości zgodniej z ilością liter w haśle</expected></step>
+<step>
+<index>5</index><content>Kliknij button &quot;Login&quot;</content><expected>Przy polu &quot;Email Address&quot; pojawia się komunikat: &quot;Wrong e-mail address.&quot;</expected></step>
+<step>
+<index>6</index><content>W formularzu wypełnij pole &quot;Email Address&quot;: testowanie135@gmail.com
+</content><expected>W polu &quot;Email Address&quot; pojawia się wpisany adres email</expected></step>
+<step>
+<index>7</index><content>Kliknij button &quot;Login&quot;</content><expected>Pojawia się konto Użytkownika z nazwiskiem zgodnym z przypisanym do danego adresu e-mail</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C7</caseid>
+																<status>Blocked</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>180</elapsed>
+																																														<defects>PHPTTRAV-6</defects>
+																<changes>
+															<change>
+						<createdon>2023-07-16T12:17:37Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Blocked</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>Ze względu na brak możliwości zatwierdzenia utworzenia konta, w związku z brakiem otrzymania maila z linkiem do zatwierdzenia konta (w teście T1) nie ma możliwości zalogowania do konta klienta. 
+Wypełnienie i zatwierdzenie formularza logowania skutkuje wyświetleniem ponownie pustego formularza logowania.
+W związku z tym nie ma też możliwości przetestowania wariantu wprowadzenia nieprawidłowych danych logowania.</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>180</elapsed>
+																														<defects>PHPTTRAV-6</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij button </content><expected>Pojawia się lista rozwijalna z opcjami do wyboru: </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz z listy rozwijalnej opcję </content><expected>Pojawia się formularz </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>W formularzu wypełnij pole </content><expected>W polu </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wypełnij pole </content><expected>W polu Password pojawiają się kropki w ilości zgodniej z ilością liter w haśle</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij button </content><expected>Przy polu </expected><actual>Wypełnienie i zatwierdzenie formularza logowania skutkuje wyświetleniem ponownie pustego formularza logowania.</actual><status>Failed</status></step>
+<step>
+<content>W formularzu wypełnij pole </content><expected>W polu </expected><actual>Ze względu na nieprawidłowe zadziałanie aplikacji w poprzednim kroku, bieżący krok nie może być wykonany.</actual><status>Blocked</status></step>
+<step>
+<content>Kliknij button </content><expected>Pojawia się konto Użytkownika z nazwiskiem zgodnym z przypisanym do danego adresu e-mail</expected><actual>Ze względu na nieprawidłowe zadziałanie aplikacji w poprzednim kroku, bieżący krok nie może być wykonany.</actual><status>Blocked</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-16T09:48:52Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T8</id>
+				<title>Logowanie do konta w aplikacji bookingowej phptravels.net - z brakiem danych</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>180</estimate>
+																								<references>PHPTTRAV-6</references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)</preconds>
+															<steps_separated><step>
+<index>1</index><content>Kliknij button &quot;ACCOUNT&quot; w prawym g&amp;oacute;rnym rogu strony</content><expected>Pojawia się lista rozwijalna z opcjami do wyboru: &quot;Login&quot;, &quot;Signup&quot;</expected></step>
+<step>
+<index>2</index><content>Wybierz z listy rozwijalnej opcję &quot;Login&quot;</content><expected>Pojawia się formularz &quot;Login&quot; z polami do wypełnienia</expected></step>
+<step>
+<index>3</index><content>W formularzu wypełnij pole &quot;Email Address&quot;: testowanie135@gmail.com</content><expected>W polu &quot;Email Address&quot; pojawia się wpisany adres email</expected></step>
+<step>
+<index>4</index><content>Kliknij button &quot;Login&quot;</content><expected>Przy polu &quot;Password&quot; pojawia się komunikat: &quot;You have to write password.&quot;</expected></step>
+<step>
+<index>5</index><content>Wypełnij pole &quot;Password&quot;: qwe123</content><expected>W polu Password pojawiają się kropki w ilości zgodniej z ilością liter w haśle
+</expected></step>
+<step>
+<index>6</index><content>Kliknij button &quot;Login&quot;</content><expected>Pojawia się konto Użytkownika z nazwiskiem zgodnym z przypisanym do danego adresu e-mail
+</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C8</caseid>
+																<status>Blocked</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>180</elapsed>
+																																														<defects>PHPTTRAV-6</defects>
+																<changes>
+															<change>
+						<createdon>2023-07-16T12:22:00Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Blocked</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>Ze względu na brak możliwości zatwierdzenia utworzenia konta, w związku z brakiem otrzymania maila z linkiem do zatwierdzenia konta (w teście T1) nie ma możliwości zalogowania do konta klienta. 
+Wypełnienie i zatwierdzenie formularza logowania skutkuje wyświetleniem ponownie pustego formularza logowania.
+W związku z tym nie ma też możliwości przetestowania wariantu wprowadzenia nieprawidłowych danych logowania.</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>180</elapsed>
+																														<defects>PHPTTRAV-6</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij button </content><expected>Pojawia się lista rozwijalna z opcjami do wyboru: </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz z listy rozwijalnej opcję </content><expected>Pojawia się formularz </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>W formularzu wypełnij pole </content><expected>W polu </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij button </content><expected>Przy polu </expected><actual>Wypełnienie i zatwierdzenie formularza logowania skutkuje wyświetleniem ponownie pustego formularza logowania.</actual><status>Failed</status></step>
+<step>
+<content>Wypełnij pole </content><expected>W polu Password pojawiają się kropki w ilości zgodniej z ilością liter w haśle
+</expected><actual>Ze względu na nieprawidłowe zadziałanie aplikacji w poprzednim kroku, bieżący krok nie może być wykonany.</actual><status>Blocked</status></step>
+<step>
+<content>Kliknij button </content><expected>Pojawia się konto Użytkownika z nazwiskiem zgodnym z przypisanym do danego adresu e-mail
+</expected><actual>Ze względu na nieprawidłowe zadziałanie aplikacji w poprzednim kroku, bieżący krok nie może być wykonany.</actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-16T09:48:52Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Rezerwacja wycieczki</name>
+		<description>Przypadki testowe dotyczące rezerwacji wycieczki</description>
+						<tests>
+						            																																																			<test>
+				<id>T9</id>
+				<title>Wybór i rezerwacja wycieczki</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>900</estimate>
+																								<references>PHPTTRAV-7, PHPTTRAV-16</references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)
+ 
+</preconds>
+															<steps_separated><step>
+<index>1</index><content>Kliknij button &quot;Tours&quot; na g&amp;oacute;rnym pasku strony</content><expected>Wyświetla się strona z nagł&amp;oacute;wkiem &quot;Find Best Tours&quot; i listy rozwijalne z opcjami do wyboru: Miasto, Data, Ilość os&amp;oacute;b oraz poniżej wyświetlają się sugerowane oferty wycieczek </expected></step>
+<step>
+<index>2</index><content>Kliknij button &quot;Search By City&quot;</content><expected>Wyświetla się lista rozwijalna z sugerowanymi miastami oraz możliwością wpisania tekstu</expected></step>
+<step>
+<index>3</index><content>Wpisz w polu &quot;Search by City&quot;: &quot;Barcelona&quot; i wybierz z wyświetlonej listy rozwijalnej &quot;Barcelona Spain&quot;</content><expected>W polu &quot;Search by City&quot; pojawia się wyb&amp;oacute;r: &quot;Barcelona Spain&quot;</expected></step>
+<step>
+<index>4</index><content>W polu &quot;Date&quot; wybierz datę 31-07-2023</content><expected>W polu &quot;Date&quot; pojawia się wybrana data</expected></step>
+<step>
+<index>5</index><content>W polu &quot;Travellers&quot; wybierz ilość os&amp;oacute;b: Adults - 2</content><expected>W polu &quot;Travellers&quot; pojawia się ilość 2</expected></step>
+<step>
+<index>6</index><content>Kliknij ikonę lupy</content><expected>Wyświetla się lista wycieczek w ramach wskazanych opcji</expected></step>
+<step>
+<index>7</index><content>Kliknij opcję &quot;Bercelona Self-Guided Murder Mystery Tour by the Cathedral of Barcelona&quot;</content><expected>Wyświetla się strona wycieczki z jej opisem, terminem, ceną i możliwością zatwierdzenia wyboru i podania danych potrzebnych do rezerwacji. Powinna być możliwość edycji ilości uczestnik&amp;oacute;w wycieczki.</expected></step>
+<step>
+<index>8</index><content>Kliknij button &quot;Book Now&quot;</content><expected>Wyświetla się formularz do wypełnienia w celu rezerwacji wycieczki</expected></step>
+<step>
+<index>9</index><content>Uzupełnij wymagane dane do rezerwacji:
+First Name: Anna
+Last Name: Nowak
+Email: testowanie135@gmail.com
+Phone: 987654321
+Address: ul. Kwiatowa 20 61-987 Poznan
+Wybierz z listy rozwijalnej &quot;Nationality&quot;: Poland
+Wybierz z listy rozwijalnej &quot;Current Country&quot;: Spain
+
+
+Traveller 1: 
+Wybierz z listy rozwijalnej &quot;Title&quot;: Mrs
+Wypełnij:
+First Name: Anna 
+Last Name: Nowak
+
+
+Traveller 2: 
+Wybierz z listy rozwijalnej &quot;Title&quot;: Mr
+Wypełnij:
+First Name: Adam 
+Last Name: Nowak
+
+
+
+</content><expected>Odpowiednie pola zostają wypełnione podanymi danymi</expected></step>
+<step>
+<index>10</index><content>Wybierz opcję płatności w &quot;Payment Methods&quot; - &quot;Pay with bank transfer&quot;
+
+</content><expected>Wybrana opcje zostaje zaznaczona</expected></step>
+<step>
+<index>11</index><content>Zaznacz checkbox &quot;I agree to all Terms&amp;amp;Condition&quot;
+</content><expected>Checkbox zostaje zaznaczony</expected></step>
+<step>
+<index>12</index><content>Kliknij button &quot;Confirm Booking&quot;</content><expected>Wyświetla się strona z zatwierdzeniem rezerwacji wybranej wycieczki i przekierowaniem do płatności</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C9</caseid>
+																<status>Failed</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>300</elapsed>
+																																														<defects>PHPTTRAV-7</defects>
+																<changes>
+															<change>
+						<createdon>2023-07-16T21:19:45Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Failed</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>Strona wybranej wycieczki nie wyświetla się prawidłowo. Dane dotyczące rezerwacji (w tym przypadku data) nie zapisują się prawidłowo. 
+Dane dotyczące klienta i uczestników wycieczki zapisują się prawidłowo.
+Po zatwierdzeniu rezerwacji nie zostaje przeliczona cena wycieczki.</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>300</elapsed>
+																														<defects>PHPTTRAV-7</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij button </content><expected>Wyświetla się strona z nagł&amp;oacute;wkiem </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij button </content><expected>Wyświetla się lista rozwijalna z sugerowanymi miastami oraz możliwością wpisania tekstu</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wpisz w polu </content><expected>W polu </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>W polu </content><expected>W polu </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>W polu </content><expected>W polu </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij ikonę lupy</content><expected>Wyświetla się lista wycieczek w ramach wskazanych opcji</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij opcję </content><expected>Wyświetla się strona wycieczki z jej opisem, terminem, ceną i możliwością zatwierdzenia wyboru i podania danych potrzebnych do rezerwacji. Powinna być możliwość edycji ilości uczestnik&amp;oacute;w wycieczki.</expected><actual>strona dotycząca opisu wycieczki wyświetla się nieprawidłowo - zrzut ekranu w załączniku</actual><status>Failed</status></step>
+<step>
+<content>Kliknij button </content><expected>Wyświetla się formularz do wypełnienia w celu rezerwacji wycieczki</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Uzupełnij wymagane dane do rezerwacji:
+First Name: Anna
+Last Name: Nowak
+Email: testowanie135@gmail.com
+Phone: 987654321
+Address: ul. Kwiatowa 20 61-987 Poznan
+Wybierz z listy rozwijalnej </content><expected>Odpowiednie pola zostają wypełnione podanymi danymi</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz opcję płatności w </content><expected>Wybrana opcje zostaje zaznaczona</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Zaznacz checkbox </content><expected>Checkbox zostaje zaznaczony</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij button </content><expected>Wyświetla się strona z zatwierdzeniem rezerwacji wybranej wycieczki i przekierowaniem do płatności</expected><actual>Wyświetla się strona z zatwierdzeniem rezerwacji wybranej wycieczki - ale data wycieczki jest nieprawidłowa, a cena wynosi 0 USD - szczeg&amp;oacute;ły w załączonym zrzucie ekranu</actual><status>Failed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-16T09:48:52Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T10</id>
+				<title>Wybór i rezerwacja wycieczki spośród sugerowanych ofert</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>600</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)
+</preconds>
+															<steps_separated><step>
+<index>1</index><content>Kliknij button &quot;Tours&quot; na g&amp;oacute;rnym pasku strony
+</content><expected>Wyświetla się strona z nagł&amp;oacute;wkiem &quot;Find Best Tours&quot; i listy rozwijalne z opcjami do wyboru: Miasto, Data, Ilość os&amp;oacute;b oraz poniżej wyświetlają się sugerowane oferty wycieczek</expected></step>
+<step>
+<index>2</index><content>Kliknij ofertę &quot;6 Days Around Thailand&quot;</content><expected>Wyświetla się oferta wycieczki - wyb&amp;oacute;r terminu, cena, opis</expected></step>
+<step>
+<index>3</index><content>Wybierz w odpowiednich polach daty graniczne wycieczki z dostępnych opcji</content><expected>W polu &quot;Date&quot; pojawiają się wybrane daty wycieczki</expected></step>
+<step>
+<index>4</index><content>W polu &quot;Travellers&quot; wybierz ilość os&amp;oacute;b: Adults - 2</content><expected>W polu &quot;Travellers&quot; pojawia się ilość 2</expected></step>
+<step>
+<index>5</index><content>Kliknij button &quot;Book now&quot;</content><expected>Wyświetla się formularz do wypełnienia w celu rezerwacji wycieczki</expected></step>
+<step>
+<index>6</index><content>Uzupełnij wymagane dane do rezerwacji:
+First Name: Anna
+Last Name: Nowak
+Email: testowanie135@gmail.com
+Phone: 987654321
+Address: ul. Kwiatowa 20 61-987 Poznan
+Wybierz z listy rozwijalnej &quot;Nationality&quot;: Poland
+Wybierz z listy rozwijalnej &quot;Current Country&quot;: Spain
+
+Traveller 1:
+Wybierz z listy rozwijalnej &quot;Title&quot;: Mrs
+Wypełnij:
+First Name: Anna
+Last Name: Nowak
+
+Traveller 2:
+Wybierz z listy rozwijalnej &quot;Title&quot;: Mr
+Wypełnij:
+First Name: Adam
+Last Name: Nowak
+</content><expected>Odpowiednie pola zostają wypełnione podanymi danymi</expected></step>
+<step>
+<index>7</index><content>Wybierz opcję płatności w &quot;Payment Methods&quot; - kliknij radiobutton &quot;Pay with bank transfer&quot;</content><expected>Zostaje zaznaczona odpowiednia opcja</expected></step>
+<step>
+<index>8</index><content>Zaznacz checkbox &quot;I agree to all Terms&amp;amp;Condition&quot;</content><expected>Checkbox zostaje zaznaczony</expected></step>
+<step>
+<index>9</index><content>Kliknij Button &quot;Confirm Booking&quot;</content><expected>Wyświetla się strona z zatwierdzeniem rezerwacji wybranej wycieczki i przekierowaniem do płatności</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C10</caseid>
+																<status>Passed</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>600</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-07-16T21:43:29Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Passed</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>W tym przypadku udaje się dokonać rezerwacji.
+Do dalszej analizy: daty wycieczek - czy ma być jedna data (jeden dzień) czy daty graniczne, czy mają być wskazywane dostępne terminy czy użytkownik sam wskazuje datę</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>600</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij button </content><expected>Wyświetla się strona z nagł&amp;oacute;wkiem </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij ofertę </content><expected>Wyświetla się oferta wycieczki - dostępne terminy, cena, opis</expected><actual>Nie wyświetlają się dostępne terminy, tylko jest możliwość wskazania terminu</actual><status>Passed</status></step>
+<step>
+<content>Wybierz w odpowiednich polach daty graniczne wycieczki z dostępnych opcji</content><expected>W polu </expected><actual>Jest możliwość wyłącznie wskazania jednego terminu (jednej daty wycieczki)</actual><status>Passed</status></step>
+<step>
+<content>W polu </content><expected>W polu </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij button </content><expected>Wyświetla się formularz do wypełnienia w celu rezerwacji wycieczki</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Uzupełnij wymagane dane do rezerwacji:
+First Name: Anna
+Last Name: Nowak
+Email: testowanie135@gmail.com
+Phone: 987654321
+Address: ul. Kwiatowa 20 61-987 Poznan
+Wybierz z listy rozwijalnej </content><expected>Odpowiednie pola zostają wypełnione podanymi danymi</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz opcję płatności w </content><expected>Zostaje zaznaczona odpowiednia opcja</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Zaznacz checkbox </content><expected>Checkbox zostaje zaznaczony</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij Button </content><expected>Wyświetla się strona z zatwierdzeniem rezerwacji wybranej wycieczki i przekierowaniem do płatności</expected><actual></actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-16T09:48:52Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Dokonywanie rezerwacji hotelu</name>
+		<description>Przypadki testowe dotyczące rezerwacji hotelu</description>
+						<tests>
+						            																																																																		<test>
+				<id>T11</id>
+				<title>Wybór hotelu spośród dostępnych ofert i rezerwacja</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>900</estimate>
+																								<references>PHPTTRAV-8</references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)
+ 
+</preconds>
+															<steps_separated><step>
+<index>1</index><content>Kliknij button &quot;Hotels&quot; na g&amp;oacute;rnym pasku strony
+
+</content><expected>Wyświetla się strona z nagł&amp;oacute;wkiem &quot;Search for best hotels&quot; i listy rozwijalne z opcjami do wyboru: Search by City, Checkin, Checkout, Travellers, Rooms oraz poniżej wyświetlają się sugerowane oferty hoteli</expected></step>
+<step>
+<index>2</index><content>W listach rozwijalnych wybierz opcję:
+Checkin: 30.07.2023
+Chceckout: 15.08.2023
+Travellers: 2
+Rooms: 1
+w liście rozwijalnej Travellers wymagane jest wskazanie narodowości. Wybierz z listy rozwijalnej &quot;Poland&quot;</content><expected>Wybrane opcje zostają zaznaczone</expected></step>
+<step>
+<index>3</index><content>Kliknij ofertę &quot;Four Points by Sheraton Bur Dubai&quot;</content><expected>Wyświetla się oferta hotelu z opisem, zdjęciami, ceną, domyślnie ustawionymi datami zameldowania i wymeldowania oraz ilością os&amp;oacute;b i pokoi. </expected></step>
+<step>
+<index>4</index><content>Kliknij button &quot;Book Now&quot;</content><expected>Wyświetla się formularz do wypełnienia w celu rezerwacji pobytu w hotelu</expected></step>
+<step>
+<index>5</index><content>Uzupełnij wymagane dane do rezerwacji:
+First Name: Anna
+Last Name: Nowak
+Email: testowanie135@gmail.com
+Phone: 987654321
+Address: ul. Kwiatowa 20 61-987 Poznan
+Wybierz z listy rozwijalnej &quot;Nationality&quot;: Poland
+Wybierz z listy rozwijalnej &quot;Current Country&quot;: Poland
+
+Traveller 1:
+Wybierz z listy rozwijalnej &quot;Title&quot;: Mrs
+
+Wypełnij:
+First Name: Anna
+Last Name: Nowak
+
+Traveller 2:
+
+Wybierz z listy rozwijalnej &quot;Title&quot;: Mr
+Wypełnij:
+
+First Name: Adam
+Last Name: Nowak
+</content><expected>Formularz zostaje wypełniony wskazanymi danymi</expected></step>
+<step>
+<index>6</index><content>Wybierz opcję płatności w &quot;Payment Methods&quot; - kliknij radiobutton &quot;Pay with bank transfer&quot;</content><expected>Zostaje zaznaczona odpowiednia opcja</expected></step>
+<step>
+<index>7</index><content>Zaznacz checkbox &quot;I agree to all Terms&amp;amp;Condition&quot;</content><expected>Checkbox zostaje zaznaczony</expected></step>
+<step>
+<index>8</index><content>Kliknij Button &quot;Confirm Booking&quot;</content><expected>Wyświetla się strona z zatwierdzeniem rezerwacji pokoj&amp;oacute;w i przekierowaniem do płatności</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C11</caseid>
+																<status>Failed</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>1200</elapsed>
+																																														<defects>PHPTTRAV-15, PHPTTRAV-8</defects>
+																<changes>
+															<change>
+						<createdon>2023-07-19T09:11:03Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Failed</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>Aplikacja zachowuje zadeklarowaną na etapie wyszukiwania ilość osób, nie ma możliwości edycji ilości osób na kolejnych etapach rezerwacji, w formularzu rezerwacji pojawia się inna ilość osób do wypełnienia w wymaganych polach niż zadeklarowana podczas wyszukiwania</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>600</elapsed>
+																														<defects>PHPTTRAV-15</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij button </content><expected>Wyświetla się strona z nagł&amp;oacute;wkiem </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>W listach rozwijalnych wybierz opcję:
+Checkin: 30.07.2023
+Chceckout: 15.08.2023
+Travellers: 2
+Rooms: 1
+w liście rozwijalnej Travellers wymagane jest wskazanie narodowości. Wybierz z listy rozwijalnej </content><expected>Wybrane opcje zostają zaznaczone</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij ofertę </content><expected>Wyświetla się oferta hotelu z opisem, zdjęciami, ceną, domyślnie ustawionymi datami zameldowania i wymeldowania oraz ilością os&amp;oacute;b i pokoi. </expected><actual>Na tym etapie nie są widoczne daty i ilość os&amp;oacute;b</actual><status>Failed</status></step>
+<step>
+<content>Kliknij button </content><expected>Wyświetla się formularz do wypełnienia w celu rezerwacji pobytu w hotelu</expected><actual>Pojawia się formularz z polami do wypełnienia danymi gości hotelowych w ilości niezgodnej z zadeklarowaną przy wyborze ofert</actual><status>Failed</status></step>
+<step>
+<content>Uzupełnij wymagane dane do rezerwacji:
+First Name: Anna
+Last Name: Nowak
+Email: testowanie135@gmail.com
+Phone: 987654321
+Address: ul. Kwiatowa 20 61-987 Poznan
+Wybierz z listy rozwijalnej </content><expected>Formularz zostaje wypełniony wskazanymi danymi</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz opcję płatności w </content><expected>Zostaje zaznaczona odpowiednia opcja</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Zaznacz checkbox </content><expected>Checkbox zostaje zaznaczony</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij Button </content><expected>Wyświetla się strona z zatwierdzeniem rezerwacji pokoj&amp;oacute;w i przekierowaniem do płatności</expected><actual>Nie ma możliwości zatwierdzenia rezerwacji bez wypełnienia wszystkich p&amp;oacute;l formularza - zawiera on pola do podania danych os&amp;oacute;b w ilości większej niż deklarowana</actual><status>Blocked</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-16T22:19:49Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Failed</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>W celu rezerwacji pokoju na etapie wyboru oferty podaje się daty graniczne pobytu i ilość osób.
+Po zatwierdzeniu wyboru pokoju i przejściu do formularza nie zgadza się ilość osób i daty graniczne z podanymi na etapie wyboru hotelu.</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>600</elapsed>
+																														<defects>PHPTTRAV-8</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij button </content><expected>Wyświetla się strona z nagł&amp;oacute;wkiem </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>W listach rozwijalnych wybierz opcję:
+Checkin: 30.07.2023
+Chceckout: 15.08.2023
+Travellers: 2
+Rooms: 1
+w liście rozwijalnej Travellers wymagane jest wskazanie narodowości. Wybierz z listy rozwijalnej </content><expected>Wybrane opcje zostają zaznaczone</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij ofertę </content><expected>Wyświetla się oferta hotelu z opisem, zdjęciami, ceną, domyślnie ustawionymi datami zameldowania i wymeldowania oraz ilością os&amp;oacute;b i pokoi. Przy czym powinna być możliwość edycji ilości os&amp;oacute;b i dat zameldowania i wymeldowania</expected><actual>Nie ma możliwości edycji dat.
+Nie ma możliwości edycji ilości os&amp;oacute;b.</actual><status>Failed</status></step>
+<step>
+<content>Zmień ilość gości na 3 osoby dorosłe i 2 pokoje</content><expected>Ilości os&amp;oacute;b i pokoi zostają wprowadzone w odpowiednich polach i zostaje przeliczona cena pobytu </expected><actual>Nie ma możliwości zmiany ilości os&amp;oacute;b</actual><status>Failed</status></step>
+<step>
+<content>Kliknij button </content><expected>Wyświetla się formularz do wypełnienia w celu rezerwacji pobytu w hotelu</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Uzupełnij wymagane dane do rezerwacji:
+First Name: Anna
+Last Name: Nowak
+Email: testowanie135@gmail.com
+Phone: 987654321
+Address: ul. Kwiatowa 20 61-987 Poznan
+Wybierz z listy rozwijalnej </content><expected>Formularz zostaje wypełniony wskazanymi danymi</expected><actual>Formularz wymaga podania danych uczestnik&amp;oacute;w/gości - 2 os&amp;oacute;b dorosłych i 2 dzieci - niezgodnie z deklaracją o ilości os&amp;oacute;b na etapie wyboru oferty
+
+
+Daty wycieczki wyświetlane obok formularza r&amp;oacute;wnież się nie zgadzają</actual><status>Failed</status></step>
+<step>
+<content>Wybierz opcję płatności w </content><expected>Zostaje zaznaczona odpowiednia opcja</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Zaznacz checkbox </content><expected>Checkbox zostaje zaznaczony</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij Button </content><expected>Wyświetla się strona z zatwierdzeniem rezerwacji pokoj&amp;oacute;w i przekierowaniem do płatności</expected><actual>Nie ma możliwości zatwierdzenia rezerwacji bez wypełnienia wszystkich p&amp;oacute;l formularza - zawiera on pola do podanie danych os&amp;oacute;b w ilości większej niż deklarowana</actual><status>Failed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-16T09:48:52Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T12</id>
+				<title>Rezerwacja hotelu z podaniem nieprawidłowych danych</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>600</estimate>
+																								<references>PHPTTRAV-9</references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)</preconds>
+															<steps_separated><step>
+<index>1</index><content>Kliknij button &quot;Hotels&quot; na g&amp;oacute;rnym pasku strony</content><expected>Wyświetla się strona z nagł&amp;oacute;wkiem &quot;Search for best hotels&quot; i listy rozwijalne z opcjami do wyboru: Search by City, Checkin, Checkout, Travellers, Rooms oraz poniżej wyświetlają się sugerowane oferty hoteli
+</expected></step>
+<step>
+<index>2</index><content>W listach rozwijalnych wybierz opcję:
+Checkin: 30.07.2023
+Chceckout: 15.08.2023
+Travellers: 2
+Rooms: 1
+w liście rozwijalnej Travellers wymagane jest wskazanie narodowości. Wybierz z listy rozwijalnej &quot;Poland&quot;</content><expected>Wybrane opcje zostają zaznaczone</expected></step>
+<step>
+<index>3</index><content>Kliknij ofertę Voco Dubai an IHG Hotel</content><expected>Wyświetla się oferta hotelu z opisem, zdjęciami, ceną, domyślnie ustawionymi datami zameldowania i wymeldowania oraz ilością os&amp;oacute;b i pokoi. Przy czym powinna być możliwość edycji ilości os&amp;oacute;b i dat zameldowania i wymeldowania
+</expected></step>
+<step>
+<index>4</index><content>Wybierz opcję pokoju dwuosobowego i kliknij &quot;Book now&quot;</content><expected>Wyświetla się formularz do wypełnienia w celu rezerwacji pobytu w hotelu</expected></step>
+<step>
+<index>5</index><content>Uzupełnij wymagane dane do rezerwacji:
+First Name: Anna
+Last Name: Nowak
+Email: annanowak
+Phone: 987654321
+Address: ul. Kwiatowa 20 61-987 Poznan
+Wybierz z listy rozwijalnej &quot;Nationality&quot;: Poland
+Wybierz z listy rozwijalnej &quot;Current Country&quot;: Poland
+
+Traveller 1:
+Wybierz z listy rozwijalnej &quot;Title&quot;: Mrs
+
+Wypełnij:
+First Name: Anna
+Last Name: Nowak
+
+Traveller 2:
+
+Wybierz z listy rozwijalnej &quot;Title&quot;: Mr
+Wypełnij:
+
+First Name: Adam
+Last Name: Nowak</content><expected>Formularz zostaje wypełniony wskazanymi danymi</expected></step>
+<step>
+<index>6</index><content>Wybierz opcję płatności w &quot;Payment Methods&quot; - kliknij radiobutton &quot;Pay with bank transfer&quot;</content><expected>Zostaje zaznaczona odpowiednia opcja</expected></step>
+<step>
+<index>7</index><content>Zaznacz checkbox &quot;I agree to all Terms&amp;amp;Condition&quot;</content><expected>Checkbox zostaje zaznaczony</expected></step>
+<step>
+<index>8</index><content>Kliknij Button &quot;Confirm Booking&quot;</content><expected>Przy polu &quot;Email&quot; pojawia się komunikat: &quot;Wrong e-mail address.&quot;</expected></step>
+<step>
+<index>9</index><content>Zmień adres e-mail i podaj adres testowanie135@gmail.com, a następnie kliknij button &quot;Confirm Booking&quot;</content><expected>Wyświetla się strona z zatwierdzeniem rezerwacji pokoju i przekierowaniem do płatności</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C13</caseid>
+																<status>Failed</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>600</elapsed>
+																																														<defects>PHPTTRAV-9</defects>
+																<changes>
+															<change>
+						<createdon>2023-07-16T22:35:36Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Failed</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>Niezgodność ilości osób i dat przy wyborze oferty i podsumowaniu rezerwacji (sprawdzone w T11).
+Zatwierdzenie formularza rezerwacji pomimo podania błędnie sformatowanego adresu e-mail.</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>600</elapsed>
+																														<defects>PHPTTRAV-9</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij button </content><expected>Wyświetla się strona z nagł&amp;oacute;wkiem </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>W listach rozwijalnych wybierz opcję:
+Checkin: 30.07.2023
+Chceckout: 15.08.2023
+Travellers: 2
+Rooms: 1
+w liście rozwijalnej Travellers wymagane jest wskazanie narodowości. Wybierz z listy rozwijalnej </content><expected>Wybrane opcje zostają zaznaczone</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij ofertę Voco Dubai an IHG Hotel</content><expected>Wyświetla się oferta hotelu z opisem, zdjęciami, ceną, domyślnie ustawionymi datami zameldowania i wymeldowania oraz ilością os&amp;oacute;b i pokoi. Przy czym powinna być możliwość edycji ilości os&amp;oacute;b i dat zameldowania i wymeldowania
+</expected><actual>Nie ma możliwości edycji dat i ilości os&amp;oacute;b</actual><status>Failed</status></step>
+<step>
+<content>Wybierz opcję pokoju dwuosobowego i kliknij </content><expected>Wyświetla się formularz do wypełnienia w celu rezerwacji pobytu w hotelu</expected><actual></actual><status>Failed</status></step>
+<step>
+<content>Uzupełnij wymagane dane do rezerwacji:
+First Name: Anna
+Last Name: Nowak
+Email: annanowak
+Phone: 987654321
+Address: ul. Kwiatowa 20 61-987 Poznan
+Wybierz z listy rozwijalnej </content><expected>Formularz zostaje wypełniony wskazanymi danymi</expected><actual>Formularz wymaga podania danych większej ilości os&amp;oacute;b niż deklarowana na etapie wyboru oferty</actual><status>Passed</status></step>
+<step>
+<content>Wybierz opcję płatności w </content><expected>Zostaje zaznaczona odpowiednia opcja</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Zaznacz checkbox </content><expected>Checkbox zostaje zaznaczony</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij Button </content><expected>Przy polu </expected><actual>po uzupełnieniu wszystkich p&amp;oacute;l (dane wszystkich os&amp;oacute;b zostały wpisane na potrzeby przetestowania funkcjonalności), formularz zostaje zatwierdzony, pomimo podania niewłaściwego formatu adresu e-mail. Nie wyświetla się komunikat o błędnym adresie e-mail.</actual><status>Failed</status></step>
+<step>
+<content>Zmień adres e-mail i podaj adres testowanie135@gmail.com, a następnie kliknij button </content><expected>Wyświetla się strona z zatwierdzeniem rezerwacji pokoju i przekierowaniem do płatności</expected><actual>ze względu na nieprawidłowe działanie aplikacji w poprzednim kroku, ten krok nie jest możliwy do wykonania</actual><status>Blocked</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-16T09:48:52Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Dokonywanie rezerwacji lotu</name>
+		<description>Przypadki testowe dotyczące rezerwacji lotu</description>
+						<tests>
+						            																																																			<test>
+				<id>T13</id>
+				<title>Rezerwacja lotu</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>600</estimate>
+																								<references>PHPTTRAV-10</references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)</preconds>
+															<steps_separated><step>
+<index>1</index><content>Kliknij button &quot;Flights&quot; na g&amp;oacute;rnym pasku strony</content><expected>Wyświetla się strona z nagł&amp;oacute;wkiem &quot;Search for best Flights&quot; i listy rozwijalne z opcjami do wyboru: Flying from - Select City, Destination To - Select City, Depart Date, Travellers oraz poniżej wyświetlają się sugerowane oferty lot&amp;oacute;w
+</expected></step>
+<step>
+<index>2</index><content>W listach rozwijalnych wybierz opcję:
+Flying from - Select City: Manila, Philippines
+Destination To - Select City: Dubai, United Arab Emirates
+Depart Date: 30-07-2023
+Travellers: Adult - 1
+</content><expected>W odpowiednich polach pojawiają się wybrane opcje</expected></step>
+<step>
+<index>3</index><content>Kliknij ikonę lupy</content><expected>Wyświetla się lista dostępnych lot&amp;oacute;w ze wskazaniem godzin lotu i marki linii lotniczych</expected></step>
+<step>
+<index>4</index><content>Kliknij przy ofercie Cathay Pacific button &quot;More Details&quot;</content><expected>Pojawiają się szczeg&amp;oacute;ły lotu z portami przesiadkowymi</expected></step>
+<step>
+<index>5</index><content>Kliknij przy ofercie Cathay Pacific button &quot;Select Flight&quot;</content><expected>Wyświetla się formularz do wypełnienia w celu rezerwacji lotu</expected></step>
+<step>
+<index>6</index><content>Uzupełnij wymagane dane do rezerwacji:
+First Name: Anna
+Last Name: Nowak
+Email: testowanie135@gmail.com
+Phone: 987654321
+Address: ul. Kwiatowa 20 61-987 Poznan
+Wybierz z listy rozwijalnej &quot;Nationality&quot;: Poland
+Wybierz z listy rozwijalnej &quot;Current Country&quot;: Poland
+
+Traveller 1:
+Wybierz z listy rozwijalnej &quot;Title&quot;: Mrs
+
+Wypełnij:
+First Name: Anna
+Last Name: Nowak
+
+Wybierz z listy rozwijalnej: Nationality - Poland
+Date of Birth: Feb - 05 - 1984
+
+Passport od ID Number - Wypełnij: 123456ABC
+
+Issuance Date: 03 - Mar - 05 - 2015
+Expiry Date: 03 - Mar - 05 - 2025
+
+
+</content><expected>Formularz zostaje wypełniony wskazanymi danymi</expected></step>
+<step>
+<index>7</index><content>Wybierz opcję płatności w &quot;Payment Methods&quot; - kliknij radiobutton &quot;Pay with bank transfer&quot;</content><expected>Zostaje zaznaczona odpowiednia opcja</expected></step>
+<step>
+<index>8</index><content>Zaznacz checkbox &quot;I agree to all Terms&amp;amp;Condition&quot;</content><expected>Checkbox zostaje zaznaczony</expected></step>
+<step>
+<index>9</index><content>Kliknij Button &quot;Confirm Booking&quot;</content><expected>Wyświetla się strona z zatwierdzeniem rezerwacji lotu i przekierowaniem do płatności</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C14</caseid>
+																<status>Failed</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>180</elapsed>
+																																														<defects>PHPTTRAV-10</defects>
+																<changes>
+															<change>
+						<createdon>2023-07-16T22:46:30Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Failed</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>Nie ma możliwości wyszukania lotów, próba zmiany parametrów rezerwacji nie daje pozytywnych rezultatów</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>180</elapsed>
+																														<defects>PHPTTRAV-10</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij button </content><expected>Wyświetla się strona z nagł&amp;oacute;wkiem </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>W listach rozwijalnych wybierz opcję:
+Flying from - Select City: Manila, Philippines
+Destination To - Select City: Dubai, United Arab Emirates
+Depart Date: 30-07-2023
+Travellers: Adult - 1
+</content><expected>W odpowiednich polach pojawiają się wybrane opcje</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij ikonę lupy</content><expected>Wyświetla się lista dostępnych lot&amp;oacute;w ze wskazaniem godzin lotu i marki linii lotniczych</expected><actual>Nie wyświetla się lista lot&amp;oacute;w, r&amp;oacute;wnież przy pr&amp;oacute;bie dowolnej zmiany parametr&amp;oacute;w. 
+W związku z tym kolejne kroki są niemożliwe do wykonania</actual><status>Failed</status></step>
+<step>
+<content>Kliknij przy ofercie Cathay Pacific button </content><expected>Pojawiają się szczeg&amp;oacute;ły lotu z portami przesiadkowymi</expected><actual></actual><status>Blocked</status></step>
+<step>
+<content>Kliknij przy ofercie Cathay Pacific button </content><expected>Wyświetla się formularz do wypełnienia w celu rezerwacji lotu</expected><actual></actual><status>Blocked</status></step>
+<step>
+<content>Uzupełnij wymagane dane do rezerwacji:
+First Name: Anna
+Last Name: Nowak
+Email: testowanie135@gmail.com
+Phone: 987654321
+Address: ul. Kwiatowa 20 61-987 Poznan
+Wybierz z listy rozwijalnej </content><expected>Formularz zostaje wypełniony wskazanymi danymi</expected><actual></actual><status>Blocked</status></step>
+<step>
+<content>Wybierz opcję płatności w </content><expected>Zostaje zaznaczona odpowiednia opcja</expected><actual></actual><status>Blocked</status></step>
+<step>
+<content>Zaznacz checkbox </content><expected>Checkbox zostaje zaznaczony</expected><actual></actual><status>Blocked</status></step>
+<step>
+<content>Kliknij Button </content><expected>Wyświetla się strona z zatwierdzeniem rezerwacji lotu i przekierowaniem do płatności</expected><actual></actual><status>Blocked</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-16T09:48:52Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T14</id>
+				<title>Rezerwacja lotu spośród dostępnych ofert</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>600</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)</preconds>
+															<steps_separated><step>
+<index>1</index><content>Kliknij button &quot;Flights&quot; na g&amp;oacute;rnym pasku strony</content><expected>Wyświetla się strona z nagł&amp;oacute;wkiem &quot;Search for best Flights&quot; i listy rozwijalne z opcjami do wyboru: Flying from - Select City, Destination To - Select City, Depart Date, Travellers oraz poniżej wyświetlają się sugerowane oferty lot&amp;oacute;w</expected></step>
+<step>
+<index>2</index><content>Wybierz pierwszą opcję lotu spośr&amp;oacute;d sugerowanych i kliknij tą ofertę</content><expected>Wyświetla się lista dostępnych lot&amp;oacute;w ze wskazaniem lotniska wylotu i docelowego, godzin lotu i marki linii lotniczych</expected></step>
+<step>
+<index>3</index><content>Kliknij pierwszą ofertę od g&amp;oacute;ry - button &quot;More details&quot;
+</content><expected>Pojawiają się szczeg&amp;oacute;ły lotu z portami przesiadkowymi</expected></step>
+<step>
+<index>4</index><content>Kliknij przy tej ofercie button &quot;Select Flight&quot;</content><expected>Wyświetla się formularz do wypełnienia w celu rezerwacji lotu</expected></step>
+<step>
+<index>5</index><content>Uzupełnij wymagane dane do rezerwacji:
+First Name: Anna
+Last Name: Nowak
+Email: testowanie135@gmail.com
+Phone: 987654321
+Address: ul. Kwiatowa 20 61-987 Poznan
+Wybierz z listy rozwijalnej &quot;Nationality&quot;: Poland
+Wybierz z listy rozwijalnej &quot;Current Country&quot;: Poland
+
+Traveller 1:
+Wybierz z listy rozwijalnej &quot;Title&quot;: Mrs
+
+Wypełnij:
+First Name: Anna
+Last Name: Nowak
+
+Wybierz z listy rozwijalnej: Nationality - Poland
+Date of Birth: Feb - 05 - 1984
+
+Passport od ID Number - Wypełnij: 123456ABC
+
+Issuance Date: 02 - Feb - 20 - 2020
+Expiry Date: 02 - Feb - 2025</content><expected>Formularz zostaje wypełniony wskazanymi danymi</expected></step>
+<step>
+<index>6</index><content>Wybierz opcję płatności w &quot;Payment Methods&quot; - kliknij radiobutton &quot;Pay with bank transfer&quot;</content><expected>Zostaje zaznaczona odpowiednia opcja</expected></step>
+<step>
+<index>7</index><content>Zaznacz checkbox &quot;I agree to all Terms&amp;amp;Condition&quot;</content><expected>Checkbox zostaje zaznaczony</expected></step>
+<step>
+<index>8</index><content>Kliknij Button &quot;Confirm Booking&quot;</content><expected>Wyświetla się strona z zatwierdzeniem rezerwacji lotu i przekierowaniem do płatności</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C16</caseid>
+																<status>Passed</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>300</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-07-17T21:03:03Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Passed</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>Rezerwacja pierwszego lotu spośród sugerowanych przebiegła pomyślnie</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>300</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij button </content><expected>Wyświetla się strona z nagł&amp;oacute;wkiem </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz pierwszą opcję lotu spośr&amp;oacute;d sugerowanych i kliknij tą ofertę</content><expected>Wyświetla się lista dostępnych lot&amp;oacute;w ze wskazaniem lotniska wylotu i docelowego, godzin lotu i marki linii lotniczych</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij pierwszą ofertę od g&amp;oacute;ry - button </content><expected>Pojawiają się szczeg&amp;oacute;ły lotu z portami przesiadkowymi</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij przy tej ofercie button </content><expected>Wyświetla się formularz do wypełnienia w celu rezerwacji lotu</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Uzupełnij wymagane dane do rezerwacji:
+First Name: Anna
+Last Name: Nowak
+Email: testowanie135@gmail.com
+Phone: 987654321
+Address: ul. Kwiatowa 20 61-987 Poznan
+Wybierz z listy rozwijalnej </content><expected>Formularz zostaje wypełniony wskazanymi danymi</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz opcję płatności w </content><expected>Zostaje zaznaczona odpowiednia opcja</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Zaznacz checkbox </content><expected>Checkbox zostaje zaznaczony</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij Button </content><expected>Wyświetla się strona z zatwierdzeniem rezerwacji lotu i przekierowaniem do płatności</expected><actual></actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-16T09:48:52Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T33</id>
+				<title>Rezerwacja lotu spośród dostępnych ofert z podaniem niewłaściwych danych</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>600</estimate>
+																								<references>PHPTTRAV-13</references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)</preconds>
+															<steps_separated><step>
+<index>1</index><content>Kliknij button &quot;Flights&quot; na g&amp;oacute;rnym pasku strony</content><expected>Wyświetla się strona z nagł&amp;oacute;wkiem &quot;Search for best Flights&quot; i listy rozwijalne z opcjami do wyboru: Flying from - Select City, Destination To - Select City, Depart Date, Travellers oraz poniżej wyświetlają się sugerowane oferty lot&amp;oacute;w</expected></step>
+<step>
+<index>2</index><content>Wybierz pierwszą opcję lotu spośr&amp;oacute;d sugerowanych i kliknij tą ofertę</content><expected>Wyświetla się lista dostępnych lot&amp;oacute;w ze wskazaniem lotniska wylotu i docelowego, godzin lotu i marki linii lotniczych</expected></step>
+<step>
+<index>3</index><content>Kliknij pierwszą ofertę od g&amp;oacute;ry - button &quot;More details&quot;</content><expected>Pojawiają się szczeg&amp;oacute;ły lotu z portami przesiadkowymi</expected></step>
+<step>
+<index>4</index><content>Kliknij przy tej ofercie button &quot;Select Flight&quot;</content><expected>Wyświetla się formularz do wypełnienia w celu rezerwacji lotu</expected></step>
+<step>
+<index>5</index><content>Uzupełnij wymagane dane do rezerwacji:
+First Name: Anna
+Last Name: Nowak
+Email: testowanie135@gmail.com
+Phone: 987654321
+Address: ul. Kwiatowa 20 61-987 Poznan
+Wybierz z listy rozwijalnej &quot;Nationality&quot;: Poland
+Wybierz z listy rozwijalnej &quot;Current Country&quot;: Poland
+
+Traveller 1:
+Wybierz z listy rozwijalnej &quot;Title&quot;: Mrs
+
+Wypełnij:
+First Name: Anna
+Last Name: Nowak
+
+Wybierz z listy rozwijalnej: Nationality - Poland
+Date of Birth: Feb - 05 - 1984
+
+Passport od ID Number - Wypełnij: 123456ABC
+
+Issuance Date: 12 - Dec - 20 - 2023
+Expiry Date: 12 - Dec - 20 - 2028
+
+
+</content><expected>Formularz zostaje wypełniony wskazanymi danymi</expected></step>
+<step>
+<index>6</index><content>Wybierz opcję płatności w &quot;Payment Methods&quot; - kliknij radiobutton &quot;Pay with bank transfer&quot;</content><expected>Zostaje zaznaczona odpowiednia opcja</expected></step>
+<step>
+<index>7</index><content>Zaznacz checkbox &quot;I agree to all Terms&amp;amp;Condition&quot;</content><expected>Checkbox zostaje zaznaczony</expected></step>
+<step>
+<index>8</index><content>Kliknij Button &quot;Confirm Booking&quot;</content><expected>Przy polu &quot;Issuance Date&quot; pojawia się komunikat: &quot;Wrong issuance date. It should be earlier then Your flight reservation&quot;
+</expected></step>
+<step>
+<index>9</index><content>Zmień datę w &quot;Issuance date&quot; na 02 - Feb - 20 - 2023 i kliknij button &quot;Confirm Booking&quot;
+</content><expected>Wyświetla się strona z zatwierdzeniem rezerwacji lotu i przekierowaniem do płatności
+</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C20</caseid>
+																<status>Failed</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>300</elapsed>
+																																														<defects>PHPTTRAV-13</defects>
+																<changes>
+															<change>
+						<createdon>2023-07-17T21:18:29Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Failed</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>Aplikacja pozwala na wskazanie daty wydania paszportu późniejszej niż data wylotu</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>300</elapsed>
+																														<defects>PHPTTRAV-13</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij button </content><expected>Wyświetla się strona z nagł&amp;oacute;wkiem </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz pierwszą opcję lotu spośr&amp;oacute;d sugerowanych i kliknij tą ofertę</content><expected>Wyświetla się lista dostępnych lot&amp;oacute;w ze wskazaniem lotniska wylotu i docelowego, godzin lotu i marki linii lotniczych</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij pierwszą ofertę od g&amp;oacute;ry - button </content><expected>Pojawiają się szczeg&amp;oacute;ły lotu z portami przesiadkowymi</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij przy tej ofercie button </content><expected>Wyświetla się formularz do wypełnienia w celu rezerwacji lotu</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Uzupełnij wymagane dane do rezerwacji:
+First Name: Anna
+Last Name: Nowak
+Email: testowanie135@gmail.com
+Phone: 987654321
+Address: ul. Kwiatowa 20 61-987 Poznan
+Wybierz z listy rozwijalnej </content><expected>Formularz zostaje wypełniony wskazanymi danymi</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Wybierz opcję płatności w </content><expected>Zostaje zaznaczona odpowiednia opcja</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Zaznacz checkbox </content><expected>Checkbox zostaje zaznaczony</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij Button </content><expected>Przy polu </expected><actual>Rezerwacja została dokonana pomimo niepoprawnych danych paszportu</actual><status>Blocked</status></step>
+<step>
+<content>Zmień datę w </content><expected>Wyświetla się strona z zatwierdzeniem rezerwacji lotu i przekierowaniem do płatności
+</expected><actual>Ze względu na nieprawidłowe działania aplikacji w poprzednim kroku, ten krok nie był mozliwy do wykonania</actual><status>Blocked</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-17T20:49:56Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Dokonywanie rezerwacji samochodu</name>
+		<description>Przypadki testowe dotyczące rezerwacji samochodu</description>
+						<tests>
+						            																																																			<test>
+				<id>T15</id>
+				<title>Rezerwacja samochodu</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>600</estimate>
+																								<references>PHPTTRAV-11</references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)</preconds>
+															<steps_separated><step>
+<index>1</index><content>Kliknij button &quot;Cars&quot; na g&amp;oacute;rnym pasku strony</content><expected>Wyświetla się strona z nagł&amp;oacute;wkiem &quot;Recommended Transfer Cars&quot; i listy rozwijalne z opcjami do wyboru: From Airport - Select City, Search By City, Date, Travellers oraz poniżej wyświetlają się sugerowane oferty samochod&amp;oacute;w na wynajem
+</expected></step>
+<step>
+<index>2</index><content>W listach rozwijalnych wybierz opcję:
+From Airport - Select City: Berlin 
+Search By City: Berlin
+Date: 30-07-2023 
+Travellers: Adults - 2
+</content><expected>W odpowiednich polach pojawiają się wybrane opcje</expected></step>
+<step>
+<index>3</index><content>Kliknij ikonę lupy</content><expected>Wyświetla się lista oferowanych samochod&amp;oacute;w</expected></step>
+<step>
+<index>4</index><content>Wybierz pierwszą dostępną ofertę, kliknij &quot;Book Now&quot;</content><expected>Wyświetla się formularz do wypełnienia w celu rezerwacji samochodu</expected></step>
+<step>
+<index>5</index><content>Uzupełnij wymagane dane do rezerwacji:
+First Name: Anna
+Last Name: Nowak
+Email: testowanie135@gmail.com
+Phone: 987654321
+Address: ul. Kwiatowa 20 61-987 Poznan
+Wybierz z listy rozwijalnej &quot;Nationality&quot;: Poland
+Wybierz z listy rozwijalnej &quot;Current Country&quot;: Poland
+
+Traveller 1:
+Wybierz z listy rozwijalnej &quot;Title&quot;: Mrs
+
+Wypełnij:
+First Name: Anna
+Last Name: Nowak
+
+Traveller 2:
+Wybierz z listy rozwijalnej &quot;Title&quot;: Mr
+
+Wypełnij:
+First Name: Adam
+Last Name: Nowak
+</content><expected>Formularz zostaje wypełniony wskazanymi danymi</expected></step>
+<step>
+<index>6</index><content>Wybierz opcję płatności w &quot;Payment Methods&quot; - kliknij radiobutton &quot;Pay with bank transfer&quot;</content><expected>Zostaje zaznaczona odpowiednia opcja</expected></step>
+<step>
+<index>7</index><content>Zaznacz checkbox &quot;I agree to all Terms&amp;amp;Condition&quot;</content><expected>Checkbox zostaje zaznaczony</expected></step>
+<step>
+<index>8</index><content>Kliknij Button &quot;Confirm Booking&quot;</content><expected>Wyświetla się strona z zatwierdzeniem rezerwacji samochodu i przekierowaniem do płatności</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C17</caseid>
+																<status>Failed</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>180</elapsed>
+																																														<defects>PHPTTRAV-11</defects>
+																<changes>
+															<change>
+						<createdon>2023-07-16T22:53:21Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Failed</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>Nie ma możliwości wyszukania samochodu</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>180</elapsed>
+																														<defects>PHPTTRAV-11</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij button </content><expected>Wyświetla się strona z nagł&amp;oacute;wkiem </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>W listach rozwijalnych wybierz opcję:
+From Airport - Select City: Berlin 
+Search By City: Berlin
+Date: 30-07-2023 
+Travellers: Adults - 2
+</content><expected>W odpowiednich polach pojawiają się wybrane opcje</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Kliknij ikonę lupy</content><expected>Wyświetla się lista oferowanych samochod&amp;oacute;w</expected><actual>nie ma możliwości wyszukania samochodu</actual><status>Failed</status></step>
+<step>
+<content>Wybierz pierwszą dostępną ofertę, kliknij </content><expected>Wyświetla się formularz do wypełnienia w celu rezerwacji samochodu</expected><actual></actual><status>Blocked</status></step>
+<step>
+<content>Uzupełnij wymagane dane do rezerwacji:
+First Name: Anna
+Last Name: Nowak
+Email: testowanie135@gmail.com
+Phone: 987654321
+Address: ul. Kwiatowa 20 61-987 Poznan
+Wybierz z listy rozwijalnej </content><expected>Formularz zostaje wypełniony wskazanymi danymi</expected><actual></actual><status>Blocked</status></step>
+<step>
+<content>Wybierz opcję płatności w </content><expected>Zostaje zaznaczona odpowiednia opcja</expected><actual></actual><status>Blocked</status></step>
+<step>
+<content>Zaznacz checkbox </content><expected>Checkbox zostaje zaznaczony</expected><actual></actual><status>Blocked</status></step>
+<step>
+<content>Kliknij Button </content><expected>Wyświetla się strona z zatwierdzeniem rezerwacji samochodu i przekierowaniem do płatności</expected><actual></actual><status>Blocked</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-16T09:48:52Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T16</id>
+				<title>Usuwanie rezerwacji samochodu z profilu użytkownika</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references>PHPTTRAV-12</references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)
+Zalogowanie do profilu użytkownika pod adresem mailowym testowanie135@gmail.com</preconds>
+															<steps_separated><step>
+<index>1</index><content>Kliknij opcję &quot;Dashboard&quot;</content><expected>Wyświetla się dashboard użytkownika z listą dokonanych rezerwacji</expected></step>
+<step>
+<index>2</index><content>Kliknij rezerwację samochodu dla lokalizacji Berlin w dniu 30 - 07 -2023</content><expected>Wyświetlają się szczeg&amp;oacute;ły rezerwacji</expected></step>
+<step>
+<index>3</index><content>Kliknij button &quot;Request for Cancellation&quot;</content><expected>Pojawia się zapytanie o potwierdzenie anulacji rezerwacji</expected></step>
+<step>
+<index>4</index><content>Kliknij button &quot;OK&quot;</content><expected>Pojawia się komunikat o anulowaniu rezerwacji</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C18</caseid>
+																<status>Blocked</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>60</elapsed>
+																																														<defects>PHPTTRAV-12, PHPTTRAV-6</defects>
+																<changes>
+															<change>
+						<createdon>2023-07-16T22:55:18Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Blocked</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>Niemożliwy do wykonania test, ze względu na niemożliwe do spełnienia warunki początkowe - brak możliwości zalogowania do konta użytkownika</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>60</elapsed>
+																														<defects>PHPTTRAV-12, PHPTTRAV-6</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Kliknij opcję </content><expected>Wyświetla się dashboard użytkownika z listą dokonanych rezerwacji</expected><actual></actual><status>Blocked</status></step>
+<step>
+<content>Kliknij rezerwację samochodu dla lokalizacji Berlin w dniu 30 - 07 -2023</content><expected>Wyświetlają się szczeg&amp;oacute;ły rezerwacji</expected><actual></actual><status>Blocked</status></step>
+<step>
+<content>Kliknij button </content><expected>Pojawia się zapytanie o potwierdzenie anulacji rezerwacji</expected><actual></actual><status>Blocked</status></step>
+<step>
+<content>Kliknij button </content><expected>Pojawia się komunikat o anulowaniu rezerwacji</expected><actual></actual><status>Blocked</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-07-16T09:48:52Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Testy użyteczności</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T32</id>
+				<title>Przechodzenie do opcji menu ze strony głównej</title>
+												<template>Test Case (Text)</template>
+																<type>Usability</type>
+																<priority>Medium</priority>
+																<estimate>600</estimate>
+																								<references>PHPTTRAV-14</references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Uruchomiona aplikacja phptravels.net w przeglądarce Google Chrome (Chrome Wersja 114.0.5735.199 on Windows 10)
+</preconds>
+															<steps>Wybór opcji Hotels, Tours, Flights, Cars z menu na górnym pasku strony oraz z menu wbudowanego w nagłówek strony i porównanie uzyskanych wyników</steps>
+															<expected>W przypadku opcji Hotels wyświetla się w każdym wypadku: strona z nagłówkiem &quot;Search for best hotels&quot; i listy rozwijalne z opcjami do wyboru: Search by City, Checkin, Checkout, Travellers, Rooms oraz poniżej wyświetlają się sugerowane oferty hoteli
+
+
+W przypadku opcji Tours wyświetla się w każdym wypadku: strona z nagłówkiem &quot;Find Best Tours&quot; i listy rozwijalne z opcjami do wyboru: Miasto, Data, Ilość osób oraz poniżej wyświetlają się sugerowane oferty wycieczek
+
+
+W przypadku opcji Flights wyświetla się w każdym wypadku: strona z nagłówkiem &quot;Search for best Flights&quot; i listy rozwijalne z opcjami do wyboru: Flying from - Select City, Destination To - Select City, Depart Date, Travellers oraz poniżej wyświetlają się sugerowane oferty lotów
+
+
+W przypadku opcji Cars wyświetla się w każdym wypadku: strona z nagłówkiem &quot;Recommended Transfer Cars&quot; i listy rozwijalne z opcjami do wyboru: From Airport - Select City, Search By City, Date, Travellers oraz poniżej wyświetlają się sugerowane oferty samochodów na wynajem
+
+
+
+
+
+</expected>
+									</custom>
+												<caseid>C19</caseid>
+																<status>Failed</status>
+																<assignedto>Honorata R</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>300</elapsed>
+																																														<defects>PHPTTRAV-14</defects>
+																<changes>
+															<change>
+						<createdon>2023-07-17T21:34:28Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Failed</status>
+																								<assignedto>Honorata R</assignedto>
+																		<comment>Możliwość wyświetlania zgodnie z opisem jest tylko pokliknięciu buttonów na górze strony.
+
+W przypadku klikniecia w buttony poniżej, nie wyświetla się pełen zakres danych.
+
+Zaznaczenie szczegółów w załącznikach</comment>
+																		<version>PHPTRAVELS V.1.0</version>
+																														<elapsed>300</elapsed>
+																														<defects>PHPTTRAV-14</defects>
+																													</change>
+															<change>
+						<createdon>2023-07-16T21:35:38Z</createdon>
+																		<createdby>Honorata R</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+</sections>
+</run>

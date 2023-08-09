@@ -1,0 +1,96 @@
+{
+  "id": "e687cd5c-ef90-458b-b8d8-2e6891ab4fbd",
+  "version": "2.0",
+  "name": "Zoowyszukiwanie",
+  "url": "https://www.zoohurtowo.pl",
+  "tests": [{
+    "id": "f7d0e8bb-897b-4f4b-9097-a0ea1c4697c2",
+    "name": "Zoowyszukiwanie",
+    "commands": [{
+      "id": "8f30d72c-1f89-41f2-97b4-0b767003e2b0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bfd6c76-be7e-4498-a9be-31e44c1635ea",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c66b00ef-bb51-40ee-b3f2-c92a6cf33641",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//div[@id='search']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6b22523-8de5-4eff-8c17-5899840d7338",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//div[@id='search']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Royal Canin"
+    }, {
+      "id": "6901c259-d0a5-40b6-9ab0-a330e28b930d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.glyphicon",
+      "targets": [
+        ["css=.glyphicon", "css:finder"],
+        ["xpath=//div[@id='search']/div/form/button/span", "xpath:idRelative"],
+        ["xpath=//form/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53d66fd9-7591-4614-b23f-c7f331e01abc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-3:nth-child(16) .description a",
+      "targets": [
+        ["css=.col-md-3:nth-child(16) .description a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Royal Canin Ageing + 12 karma sucha dla kotów dojrzałych 4kg')])[2]", "xpath:link"],
+        ["xpath=//div[@id='content']/div[3]/div[16]/div/div[2]/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.zoohurtowo.pl/buffor/royal-canin-ageing---12-karma-sucha-dla-kotow-dojrzalych-4kg,p951359192')])[2]", "xpath:href"],
+        ["xpath=//div[16]/div/div[2]/h3/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f01d790-bf3d-4313-b545-af0dff51174a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.value > span:nth-child(1)",
+      "targets": [
+        ["css=.value > span:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='product-price']/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//div/span/span", "xpath:position"]
+      ],
+      "value": "210.38"
+    }]
+  }],
+  "suites": [{
+    "id": "16f8456d-8c24-4c4c-80a4-dbce8196cb24",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f7d0e8bb-897b-4f4b-9097-a0ea1c4697c2"]
+  }],
+  "urls": ["https://www.zoohurtowo.pl/"],
+  "plugins": []
+}
