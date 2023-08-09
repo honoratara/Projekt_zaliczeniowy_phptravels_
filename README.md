@@ -11,4 +11,6 @@ Załączona dokumentacja:
 4. TestRun - plik xml "test_run_7_16_2023"
 5. Zgłoszenia błędów w Jira - plik csv "Jira"
 6. Raporty z testów - pliki pdf - "testrail-report-1", "testrail-report-2", "testrail-report-3"
-7. Nagrania przykładowych przypadków testowych - pliki side "Zakupkarmy", "Zoologowanie", "Zoowyszukiwanie"
+7. Sesja eksploracyjna - plik pdf
+8. Analiza ryzyka - plik pdf
+9. Nagrania przykładowych przypadków testowych - pliki side "Zakupkarmy", "Zoologowanie", "Zoowyszukiwanie"
